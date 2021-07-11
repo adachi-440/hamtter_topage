@@ -1,0 +1,122 @@
+/* 画面サイズ関係なくで使用するCSS */
+
+/* カスタムプロパティ */
+:root {
+  --main-color: #F69651;
+  --main-font-family: Hiragino Kaku Gothic Pro;
+  --font-color-black: #333333
+}
+
+.spacer--medium {
+  height: 40px
+}
+
+.section-title-text {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #F9F9F9;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  color: var(--font-color-black);
+  font-family: Roboto;
+  font-size: 13px;
+}
+
+/* PC用のCSSはメディアクエリの外に記述する */
+.header {}
+
+.main {}
+
+.about {}
+
+.faeture {}
+
+.usage {}
+
+.conversion {}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin: 270px 300px;
+}
+
+.contact__explanation {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+.contact__explanation-title {
+  margin-top: 180px;
+}
+
+.contact__explanation-content {
+  color: var(--font-color-black);
+  font-family: var(--main-font-family);
+  margin-top: 30px;
+}
+
+.contact__explanation-email {
+  color: var(--font-color-black);
+  font-family: var(--main-font-family);
+  margin-top: 56px;
+}
+
+.contact__form {
+  box-shadow: 0px 10px 20px rgba(153, 153, 153, 0.25);
+}
+
+.contact__form-input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__text-field {
+  font-size: 24px;
+  background-color: #F1F1F1;
+  border-color: #F1F1F1;
+  border-radius: 6px;
+  width: 630px;
+  height: 95px;
+  margin: 0 70px 40px;
+}
+
+.contact__text-field::placeholder {
+  color: #999999;
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  padding-left: 60px;
+}
+
+.contact__submit-btn {
+  background-color: #FFFFFF;
+  border: 4px solid var(--main-color);
+  border-radius: 6px;
+  margin-left: 75px;
+  margin-bottom: 75px;
+  padding: 20px 0;
+}
+
+.contact__submit-btn-text {
+  color: var(--main-color);
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px 60px;
+}
+
+@media screen and (max-width: 480px) {
+  /* 480px以下に適用されるCSS（スマホ用） */
+}
