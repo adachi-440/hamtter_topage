@@ -1,63 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<title>Hamtterへようこそ</title>
+    <title>Hamtterへようこそ</title>
 
-	<!-- meta -->
-	<meta charset="utf-8">
+    <!-- meta -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://use.fontawesome.com/1d60f179c3.js"></script>
-	<!-- css -->
-	<link rel="stylesheet" href="index.css">
-	<!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Oxygen:400,300,700' rel='stylesheet'>
+    <script src="https://use.fontawesome.com/1d60f179c3.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Oxygen:400,300,700' rel='stylesheet'>
 </head>
 <body>
 
-	<div class="page">
+    <div class="page">
 
-		<header class="header"></header>
+        <header>
+            <a href="#"><img src="images/hamtter_logo.png" alt="ロゴ画像" class="name"></a>
+            <div id="hamburger">
+              <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <!--ハンバーガーリスト-->
+            <nav class="nav-sp">
+              <ul class="sp-link">
+                <li><a href="#about">Hamtterとは</a></li>
+                <li><a href="#feature">特徴</a></li>
+                <li><a href="#usage">使い方</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li class="nav-right"><a href="http://hamtter.com/login.html">無料会員登録</a></li>
+                <li class="nav-right"><a href="http://hamtter.com/login.html">ログイン</a></li>
+              </ul>
+            </nav>
+            <!--headerリスト-->
+            <nav class="nav-pc">
+              <ul>
+                <li><a href="#about">Hamtterとは</a></li>
+                <li><a href="#feature">特徴</a></li>
+                <li><a href="#usage">使い方</a></li>
+                <li class="nav"><a href="#contact">お問い合わせ</a></li>
+                <li class="nav-right"><a class="button" href="http://hamtter.com/login.html">無料会員登録</a></li> 
+                <li class="nav-right"><a class="button2" href="http://hamtter.com/login.html">ログイン</a></li> 
+              </ul>
+            </nav>
+          </header>
 
-		<div class="page__content">
+        <div class="page__content">
 
-			<section class="main"></section>
+            <div class="top-text">
+                <img src="images/top_pc.png"alt="トップ画像" class="pc-img">
+                <img src="images/top_sp.png" alt="スマホサイズのトップ画像" class="sm-img">
+                <div class="top-text-container">
+                    <h1>Twitterをより便利に</h1>
+                    <p>HamtterはTwitterのフォロワー数を無料で効率的に伸ばすためのサービスです</p>
+                    <a href="http://hamtter.com/login.html">始める</a>
+                </div>
+            </div>
+           
+            <section id="about">
+                <div class="about__content">
+                    <img src="images/about.png" alt="スマホ画像"　class="about__image">
+                </div>
+                <div class="about__content about__content-text">
+                    <h2 class="section-title-text">Hamtterとは？</h2>
+                    <p>Hamtterとは、Twitterと連携してフォロー＆フォロワー数を増やす作業を365日24時間自動でかつ、無料で行うことができるサービスです。個人利用はもちろん、ターゲットを絞ったアプローチが可能なのでビジネスアカウントとしてもご利用いただけます。</p>
+                </div>
+            </section>
 
-			<section class="about">
-				<div class="about__content">
-					<img src="images/about.png" alt="アバウト画像"　class="about__image">
-				</div>
-				<div class="about__content about__content-text">
-					<h2 class="section-title-text">Hamtterとは？</h2>
-					<p>Hamtterとは自動の機能を用いてTwitterと連結し、フォロワー数をより効率的に増やす作業を365日24時間無料で行うための支援サービスです。個人利用はもちろん、ターゲットを絞ったアプローチが可能なのでビジネス目的でもご利用いただけます。</p>
-			    </div>
-			</section>
+            <section id="feature"></section>
 
-			<section class="feature"></section>
+            <section id="usage">
+                <div class="usage">
+                    <h2 class="section-title-text">使い方</h2>
+                    <div class="usage__container">
+                        <div class="usage__content">
+                            <img src="images/form.png" alt="フォーム画像"　class="usage__image">
+                            <h3>STEP1</h3>
+                            <p>最初に新規登録ボタンを押しユーザーID、メールアドレス、パスワードを入力してください。</p>
+                        </div>
+                        <div class="usage__content">
+                            <img src="images/mail.png" alt="メール画像"　class="usage__image">
+                            <h3>STEP2</h3>
+                            <p>登録したメールアドレス宛に記載されたURLリンクを開いてください。</p>
+                        </div>
+                        <div class="usage__content">
+                            <img src="images/checkbox.png" alt="チェックボックス画像"　class="usage__image">
+                            <h3>STEP3</h3>
+                            <p>Twitterに連結する画面でお持ちのTwitterアカウントを登録すると準備完了です！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-			<section class="usage">
-				<h2 class="section-title-text">使い方</h2>
-				<div class="usage__container">
-					<div class="usage__content">
-						<img src="images/form.png" alt="フォーム画像"　class="usage__image">
-						<h3>STEP1</h3>
-						<p>最初に新規登録ボタンを押しユーザーID、メールアドレス、パスワードを入力してください。</p>
-					</div>
-					<div class="usage__content">
-						<img src="images/mail.png" alt="メール画像"　class="usage__image">
-						<h3>STEP2</h3>
-						<p>登録したメールアドレス宛に記載されたURLリンクを開いてください。</p>
-					</div>
-					<div class="usage__content">
-						<img src="images/checkbox.png" alt="チェックボックス画像"　class="usage__image">
-						<h3>STEP3</h3>
-						<p>Twitterに連結する画面が出てくるので、お持ちのTwitterアカウントを登録したら準備完了です！早速始めましょう！</p>
-					</div>
-				</div>
-			</section>
 
-			<section class="conversion"></section>
-            <section class="contact">
+            <section id="conversion">
+            <div class="conversion__container">
+                <div class="conversion__content">
+                    <h2 class="section-conversion-text">自分の声を<br>世界に届けて<br>価値を提供しよう</h2>
+                    <p>Hamtterを利用して<br>情報発信力を磨きませんか？<br>誰もが簡単に、<br>無料で始めることができます。</p>
+                    <a class="button4" href="http://hamtter.com/login.html">Hamtterをはじめる</a>
+                </div>
+                <div class="conversion__content conversion__right">
+                    <img src="images/conversion_mockup.png" alt="PCとスマホのモックアップ画像">
+                </div>     
+            </div>
+        </section>
+
+            <!-- <section id="contact">
                 <div class="contact__explanation">
                     <span class="contact__explanation-title section-title-text">お問い合わせ</span>
                     <span class="contact__explanation-content">Hamtterは、皆さんが快適にご利用できるよう、日々アップデートを行っています。バグの報告やレビュー等がございましたら、こちらから報告していただけますと幸いです。</span>
@@ -76,13 +130,15 @@
                         <span class="contact__submit-btn-text">送信する</span>
                     </button>
                 </form>
-            </section>
-		</div>
+            </section> -->
+        </div>
 
-		<footer class="footer">
-			<span class="footer__text">©️2021 Adachi inc. All Rights Reserved. </span>
-		</footer>
-
-	</div>
+        <footer class="footer">
+            <span class="footer__text">©️2021 Adachi inc. All Rights Reserved. </span>
+        </footer>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
 </body>
 </html>
+
